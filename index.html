@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='script.js'></script>
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <div class="topnav-right">
+              <a href="#search">Search</a>
+              <a href="#about">About</a>
+              <a href="#search">Search</a>
+              <a href="#about">About</a>
+            </div>
+          </div>
+        </header>
+
+        <div class="row">
+            <div class="column" style="background-color:#ffffff;">
+                
+                    <div class="card">
+                        <img src="https://html.com/wp-content/uploads/very-large-flamingo.jpg" alt="Avatar" style="width:100%;" >
+
+                        <!-- <img src="avatar.png" alt="Avatar" style="size:100%;"> -->
+                        
+                        <div class="container">
+                          <h4><b>Manikandan</b></h4> 
+                          <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At quos voluptate unde, suscipit velit perspiciatis rem deserunt in nisi harum et ea quibusdam, esse nam ipsum delectus numquam nesciunt repellat?</p> 
+                        </div>
+                      </div>
+                 
+            </div>
+
+            <div class="column" style="background-color:#fff;">
+                <div class="container2">
+                    <div id="date" style="text-decoration: blueviolet;"> </div>
+                    <div id="time"> </div>
+                    <script type="text/javascript">
+                        let date = document.getElementById("date");
+                        let time = document.getElementById("time");
+                        let newDate = new Date();
+                        let year = newDate.getFullYear();
+                        let month = newDate.getMonth();
+                        let todaySDate = newDate.getDate();
+                        let hours = newDate.getHours();
+                        let minutes = newDate.getMinutes();
+                        time.innerHTML = hours + ": " + minutes;
+                        date.innerHTML = " " + todaySDate + "/ " + month + "/ " + year;
+                    </script>
+                  </div>
+
+                  <div class="container3">
+                   
+                    <script>
+                        var rowCount = document.getElementById('totalNumbeOfRows').rows.length;
+                        rowCount.innerHTML
+                        
+                    </script>
+                  </div>
+            </div>
+
+            <div class="column" style="background-color:#fff;">
+                <div class="container1">
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                      <label for="fname" id="fnameValidationError">First Name</label>
+                      <input type="text" name="firstname" id="firstname" placeholder="Your name..">
+                  
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+                      <label for="lname">Email Id</label>
+                      <input type="text" id="mailID" name="mailID" placeholder="Your last name..">
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+            </div>
+            <div class="column" style="background-color:#fff; margin-top: 17%;">
+                <div class="container4" style="justify-content: center;">
+                    <table class="list" id="employeeList">
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Mail</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <h3><b>My Request</b></h3>
+                        </tbody>
+                    </table>
+                  </div>
+            </div>
+        </div>
+        <div style="margin-top: 15%;">
+
+
+        </div>
+</body>
+</html>
